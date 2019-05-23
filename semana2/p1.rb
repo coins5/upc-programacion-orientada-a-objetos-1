@@ -5,9 +5,7 @@ end
 
 def reporte(arreglo)
   arreglo.sort_by!{|f| f[0]}
-  arreglo.each do |item| 
-    puts "#{item[0]} tiene #{item[1]} años"
-  end
+  arreglo.each { |e| puts "#{e[0]} tiene #{e[1]} años" }
 end
 
 def menuAgregarPersona(arreglo)
