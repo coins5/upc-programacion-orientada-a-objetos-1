@@ -12,7 +12,7 @@ class Program
         puts "#{dni} - TIPO DE TRABAJADOR NO VALIDO"
     end
 
-    puts "El trabajador #{nombre} #{apellido} recibe un bono de #{bono} soles. Sueldo: #{sueldo_base + bono} soles"
+    puts "El trabajador #{nombre} #{apellido} recibe un bono de #{bono} soles. Sueldo base: #{sueldo_base} . Sueldo total: #{sueldo_base + bono} soles"
   end
 end
 
