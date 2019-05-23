@@ -31,7 +31,7 @@ class Alumno
 
   def calcularPromedioFinal
     # PF = Promedio prácticas * 0.2 + Parcial * 0.3 + Final * 0.5
-    promedioPC = (@pc1 + @pc2 + @pc3) / 3
+    promedioPC = (@pc1 + @pc2 + @pc3) / 3.0
     return (promedioPC * 0.2) + (@parcial * 0.3) + (@final * 0.5)
   end
 end
@@ -44,6 +44,6 @@ al1.setNotas(pc1: 0, pc2: 14, pc3: 13, parcial: 15, final: 12)
 al2.setNotas(pc1: 11, pc2: 15, pc3: 17, parcial: 13, final: 17)
 al3.setNotas(pc1: 16, pc2: 18, pc3: 19, parcial: 18, final: 20)
 
-puts "El alumno #{al1.nombre} #{al1.apellido} tiene como promedio final: #{al1.calcularPromedioFinal}"
-puts "El alumno #{al2.nombre} #{al2.apellido} tiene como promedio final: #{al2.calcularPromedioFinal}"
-puts "El alumno #{al3.nombre} #{al3.apellido} tiene como promedio final: #{al3.calcularPromedioFinal}"
+puts "El alumno #{al1.nombre} #{al1.apellido} tiene como promedio final: #{al1.calcularPromedioFinal().round(2)}"
+puts "El alumno #{al2.nombre} #{al2.apellido} tiene como promedio final: #{al2.calcularPromedioFinal().round(2)}"
+puts "El alumno #{al3.nombre} #{al3.apellido} tiene como promedio final: #{al3.calcularPromedioFinal().round(2)}"
